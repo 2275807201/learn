@@ -1,4 +1,4 @@
-package com.liangh.lock;
+package com.liangh.concurrent.lock;
 
 import java.io.IOException;
 import java.util.concurrent.CopyOnWriteArraySet;
