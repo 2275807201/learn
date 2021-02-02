@@ -29,7 +29,8 @@ public class ServerSocketTest {
 
 //                    outputStream.close();
                     BufferedOutputStream bos = new BufferedOutputStream(outputStream);
-                    bos.close();
+                    bos.flush();
+//                    bos.close();
 
                     // 再一次获取输出流
 //                    outputStream = socket.getOutputStream();

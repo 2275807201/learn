@@ -2,6 +2,7 @@ package com.liangh.socket;
 
 import java.io.BufferedInputStream;
 import java.io.InputStream;
+import java.net.InetAddress;
 import java.net.Socket;
 import lombok.extern.slf4j.Slf4j;
 
@@ -16,7 +17,10 @@ public class SocketTest {
 
     public static void main(String[] args) throws Exception {
 
-        Socket socket = new Socket("127.0.0.1", 2000);
+//        Socket socket = new Socket("127.0.0.1", 2000);
+
+        InetAddress address = InetAddress.getLocalHost();
+        Socket socket = new Socket("127.0.0.1", 2000, address, 18081);
 
         byte [] a = new byte[1024];
 
