@@ -2,7 +2,6 @@ package com.liangh.guava.event;
 
 import lombok.Data;
 
-@Data
 public class TestEvent {
     private final int message;
     public TestEvent(int message) {        

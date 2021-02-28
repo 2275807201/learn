@@ -65,7 +65,7 @@ public class WeakReferenceTest {
     class Person{
         private String name;
 
-        @Override
+//        @Override
         public String toString() {
             return "Person{" +
                     "name='" + name + '\'' +
