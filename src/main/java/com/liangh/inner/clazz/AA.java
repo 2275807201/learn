@@ -6,6 +6,10 @@ public class AA {
 //		AA.BB bb = new AA().new BB();
 	}
 
+	BB newBBInstance(){
+		return new BB();
+	}
+
 	class BB{
 		private String name;
 	}
